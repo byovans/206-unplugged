@@ -87,6 +87,156 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* Base Header - Footer Styles */
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.header-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews {
+  display: flex;
+}
+
+.reviews .content-wrapper h3 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.content-wrapper2 {
+  display: flex;
+  
+}
+
+
+.mission-content {
+  display: flex;
+}
+
+
+.content-wrapper h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.footer {
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+
+.hero-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.faqs {
+  display: flex;
+  justify-content: center;
+}
+
+.common-questiond {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.copyright {
+  display: flex;
+  align-content: flex-end;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
