@@ -671,14 +671,95 @@ footer .contact p {
     padding: 0 80px;
     width: 100%;
   }
-
-  .
-
-
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* HERO AREA */
+
+  .hero-area h1 {
+    width: 69.2%;
+  }
+
+
+  /* ASIDE */
+  aside {
+    display: flex;
+    width: 83.3%;
+    padding-left: 80px;
+    margin-left: 90px;
+  }
+
+
+  aside .content-wrapper {
+    display: flex;
+    
+  }
+
+  /* FEATURES */
+  .features h2 {
+    display: flex;
+    width: 91.7%;
+  }
+
+  .features-items {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .features-item-description {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .features article {
+    width: 33.3%;
+    margin: 40px 0;
+  }
+
+
+  /* REVIEWS */
+  .reviews {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .reviews .content-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  /* ABOUT PAGE */
+  .mission h4, .contact-section h3 {
+    width: 91.7%;
+  }
+
+  .mission h4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* FAQ PAGE */
+  .faqs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .faqs h2 {
+    width: 100%;
+  }
+
+  .faqs .content-wrapper {
+    display: flex;
+  }
+  
 
 }
 
