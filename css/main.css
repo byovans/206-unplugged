@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  box-sizing: border-box;
 }
 
 /*
@@ -101,6 +100,11 @@ header {
 }
 
 
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header-divider {
   width: 100%;
 }
@@ -116,16 +120,16 @@ header .content-wrapper {
 header nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 60%;
 }
 
 
 header nav ul {
   display: flex;
-  align-content: space-between;
   list-style: none;
-  width: 45%;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
 }
 
 
@@ -152,8 +156,6 @@ aside .content-wrapper {
 
 .form {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-flow: column;
   margin: 0 20px;
 }
@@ -184,7 +186,7 @@ aside .content-wrapper {
 
 
 .features article {
-  width: 45%;
+  width: 95%;
   margin: 15px 0;
 }
 
@@ -242,8 +244,7 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
-  margin: 50 0;
+  width: 100%;
 }
 
 footer .social {
@@ -251,7 +252,7 @@ footer .social {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 55%;
+  width: 100%;
   margin: 0;
 }
 
@@ -259,11 +260,23 @@ footer .social {
 footer .contact {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+footer h4 {
+  text-align: center;
+}
+
+
+footer .footer-content {
+  width: 100%;
 }
 
 footer .social-icons {
   display: flex;
+}
+
+footer .social-icons p {
+  margin: 10px;
 }
 
 footer .contact p {
@@ -276,7 +289,8 @@ footer .contact p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 100%;
+  padding-top: 10px;
 }
 
 
@@ -402,16 +416,274 @@ footer .contact p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  /* General styles */
+  .content-wrapper {
+    max-width: 768px;
+    /* margin: 100px 0; */
+  }
+
+  /* HEDAER */
+  header {
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin-left: 80px;
+  }
+
+  
+
+  header nav {
+    width: 83%; /* 640px/768px */
+    margin: 0;
+    display: flex;
+  }
+
+  header nav ul {
+    width: 22%; /* of/768px */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 200px;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* HERO AREA */
+  .hero-area {
+    width: 100%;
+  }
+
+  .hero-area .content-wrapper {
+    width: 100%;
+  }
+
+  .hero-area h1 {
+    width: 69.3%; /* 532px/768px */
+    display: flex;
+    justify-content: center;
+    margin: 0 80px;
+  }
+
+  /* ASIDE */
+
+  aside {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside .content-wrapper {
+    width: 50%;
+    margin: 50px 0;
+    padding-left: 60px;
+  }
+
+  aside .content-wrapper .form-description {
+    display: flex;
+    flex-flow: column;
+  }
+
+  aside .form {
+    width: 50%;
+    display: flex;
+    padding-left: 70px;
+    margin-bottom: 20px;
+  }
+
+  .form input {
+    display: flex;
+    width: 50%;
+    padding: 3px;
+  }
+
+  button {
+    display: flex;
+    width: 54%;
+  }
+
+  .features h2 {
+    display: flex;
+    width: 83%;
+    margin: 0 80px;
+  }
+
+  .features-items {
+    display: flex;
+    flex-flow: wrap;
+    padding: 0 30px;
+  }
+
+  .features article {
+    width: 50%;
+  }
+
+  .reviews .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin: 10px 65px;
+  }
+
+  .previous-year1 {
+    display: flex;
+    width: 50%;
+    flex-flow: column;
+  }
+
+  .previous-year2 {
+    width: 50%;
+    display: flex;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  footer .footer-content {
+    display: flex;
+  }
+
+  footer .contact {
+    width: 50%;
+  }
+
+  footer .contact div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 90px 0;
+    padding-right: 30px;
+  }
+
+  footer .social {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .social-icons p {
+    width: 25%;
+    margin: 15px;
+    padding-top: 30px;
+  }
+
+  .copyright {
+    display: flex;
+    margin-top: 40px;
+  }
+
+
+  /* ABOUT PAGE */
+  .mission .content-wrapper {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .mission-content {
+    width: 100%;
+    display: flex;
+  }
+
+  .mission-content div {
+    width: 50%;
+    margin: 10px 30px;
+    text-align: justify;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+
+  .contact-section h3 {
+    width: 100%;
+    text-align: center;
+    
+  }
+
+
+  .contact-section .content-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  .content-wrapper .contact {
+    width: 50%;
+  }
+
+  .content-wrapper .contact {
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+
+
+  /* FAQ PAGE */
+  .faqs .content-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+
+  .faq-content {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .faqs h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .faq-content div {
+    display: flex;
+    flex-flow: wrap;
+    width: 50%;
+  }
+
+  .faq-content div p {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 40px;
+    padding: 0 40px;
+  }
+
+  .faq-content div h5 {
+    padding: 0 80px;
+    width: 100%;
+  }
+
+  .
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+
 }
+
+
+
 
 /* ==========================================================================
    Print styles.
