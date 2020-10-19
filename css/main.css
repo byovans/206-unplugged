@@ -17,6 +17,9 @@ html {
   line-height: 1.4;
 }
 
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -96,6 +99,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  background-color: #404040;
 }
 
 
@@ -110,19 +114,29 @@ a {
 }
 
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
-  font-size: ;
+  color: #ffffff;
+  font-weight: lighter;
 }
 
+.reviews {
+  background-color: #125947;
+  padding: 60px 0;
+}
 
-h3, h4 {
-  font-family: 'Poppins', sans-serif;
+.reviews h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin: 0 20px;
 }
 
 
 p {
-
+  color: #ffffff;
 }
 
 
@@ -142,12 +156,63 @@ address {
 
 
 .content-wrapper {
-
+  
 }
 
 
+/* Form */
+
+aside .form {
+  margin-top: 60px; /* class instructions say 30px */
+}
 
 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: #202020;
+}
+
+
+nav ul li a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: brown;
+}
+
+/* a:visited {
+  color: purple;
+} */
+
+.hero-area h1 {
+  font-size: 2.5em;
+}
+
+aside {
+  background-color:	#4b7459;
+}
 
 
    /* -------- Base Header - Footer Styles -------- */
@@ -223,6 +288,10 @@ aside .content-wrapper {
   margin: 0 20px;
 }
 
+aside .form-description h3 {
+  justify-content: flex-start;
+}
+
 
 .form input {
   margin-bottom: 15px;
@@ -261,12 +330,13 @@ aside .content-wrapper {
 
 
 .reviews {
-  display: flex;
+  flex-flow: wrap;
 }
 
 .reviews h3 {
   display: flex;
-  width: 80%;
+  justify-content: center;
+  margin: 40px 20px;
 }
 
 .content-wrapper h3, p {
@@ -302,6 +372,7 @@ aside .content-wrapper {
 footer {
   display: flex;
   justify-content: center;
+  background-color: #292923;
 }
 
 
@@ -313,10 +384,8 @@ footer .content-wrapper {
 }
 
 footer .social {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   width: 100%;
   margin: 0;
 }
@@ -338,6 +407,7 @@ footer .footer-content {
 
 footer .social-icons {
   display: flex;
+  justify-content: center;
 }
 
 footer .social-icons p {
@@ -411,6 +481,8 @@ footer .contact p {
 .faq-content div {
   margin: 30px 0;
 }
+
+
 
 
 
@@ -618,7 +690,6 @@ footer .contact p {
     width: 100%;
     display: flex;
     flex-flow: row;
-    margin: 10px 65px;
   }
 
   .previous-year1 {
@@ -717,11 +788,6 @@ footer .contact p {
     text-align: center;
   }
 
-  footer {
-    margin-top: 60px;
-  }
-
-
   /* FAQ PAGE */
   .faqs .content-wrapper {
     display: flex;
@@ -775,15 +841,18 @@ footer .contact p {
   /* ASIDE */
   aside {
     display: flex;
-    width: 83.3%;
-    padding-left: 80px;
-    margin-left: 90px;
+    width: 100%;
   }
 
 
   aside .content-wrapper {
     display: flex;
     
+  }
+
+  aside .content-wrapper .form-description {
+    width: 60%;
+    margin-left: 220px;
   }
 
   /* FEATURES */
