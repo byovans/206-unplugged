@@ -141,12 +141,12 @@ p {
 
 
 img {
-
+  width: 100%;
 }
 
 
 figure {
-
+  margin: 0;
 }
 
 
@@ -155,8 +155,9 @@ address {
 }
 
 
-.content-wrapper {
-  
+.hero-area .content-wrapper {
+  display: flex;
+  margin-bottom: 400px;
 }
 
 
@@ -202,17 +203,31 @@ a:hover {
   color: brown;
 }
 
-/* a:visited {
-  color: purple;
-} */
 
 .hero-area h1 {
   font-size: 2.5em;
 }
 
-aside {
+.hero-area {
+  background: url('../img/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+  
+
+aside, .mission, .faqs {
   background-color:	#4b7459;
 }
+
+
+.mission {
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+}
+
+
 
 
    /* -------- Base Header - Footer Styles -------- */
@@ -228,9 +243,12 @@ header {
 }
 
 
-header img {
-  max-width: 100%;
-  height: auto;
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -266,6 +284,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+
 }
 
 .hero-area h1 {
@@ -593,7 +613,7 @@ footer .contact p {
     width: 100%;
     display: flex;
     flex-flow: row;
-    margin-left: 80px;
+    margin-left: 30px;
   }
 
   
@@ -605,20 +625,25 @@ footer .contact p {
   }
 
   header nav ul {
-    width: 22%; /* of/768px */
+    width: 50%; /* of/768px */
     display: flex;
-    justify-content: space-between;
     padding: 0;
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
   .header-divider {
     display: none;
   }
 
+  header figure {
+    width: 28.6%;
+    margin-left: 50px;
+  }
+
   /* HERO AREA */
   .hero-area {
     width: 100%;
+    min-height: 600px;
   }
 
   .hero-area .content-wrapper {
@@ -626,10 +651,10 @@ footer .contact p {
   }
 
   .hero-area h1 {
-    width: 69.3%; /* 532px/768px */
     display: flex;
     justify-content: center;
     margin: 0 80px;
+    font-size: 3em;
   }
 
   /* ASIDE */
@@ -760,6 +785,10 @@ footer .contact p {
     text-align: justify;
   }
 
+  .mission h4 {
+    padding-left: 30px;
+  }
+
   .contact-section {
     display: flex;
     flex-flow: wrap;
@@ -820,7 +849,7 @@ footer .contact p {
   }
 
   .faq-content div h5 {
-    padding: 0 80px;
+    padding: 0 60px;
     width: 100%;
   }
 }
@@ -831,10 +860,28 @@ footer .contact p {
     max-width: 960px;
   }
 
+/* HEADER */
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+
+  header figure {
+    margin-left: 0;
+  }
+
   /* HERO AREA */
 
+  .hero-area {
+    min-height: 800px;
+  }
+
+
   .hero-area h1 {
-    width: 69.2%;
+    width: 100%;
+    font-size: 4em;
+    margin: 0;
   }
 
 
@@ -897,6 +944,10 @@ footer .contact p {
   .mission h4 {
     display: flex;
     justify-content: center;
+  }
+
+  .mission .content-wrapper {
+    margin: 0;
   }
 
   /* FAQ PAGE */
