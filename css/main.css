@@ -200,7 +200,11 @@ nav ul li a {
 }
 
 a:hover {
-  color: brown;
+  color: pink;
+}
+
+a i:hover {
+  color: pink;
 }
 
 
@@ -216,12 +220,29 @@ a:hover {
 }
 
 
+.features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.features .content-wrapper {
+  margin: 30px;
+}
+
+
 .features i {
   font-size: 5em;
   margin-bottom: 40px;
   margin-right: 40px;
 }
-  
+
+.reviews .previous-year1 .team-pic {
+  margin: 10px 0;
+}
+
 
 aside, .mission, .faqs {
   background-color:	#4b7459;
@@ -232,6 +253,10 @@ aside, .mission, .faqs {
   font-size: 1.5em;
 }
 
+.social-icons a {
+  color: #4b7459;
+}
+
 /* ABOUT */
 
 .mission {
@@ -240,7 +265,14 @@ aside, .mission, .faqs {
   min-height: 350px;
 }
 
+
+.contact-section {
+  background: #0c5b3e;
+  padding: 30px 0;
+}
+
  /* -------- Base Header - Footer Styles -------- */
+ /* Designed for Mobile First */
 header, footer {
   display: flex;
   justify-content: center;
@@ -411,13 +443,14 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 50px 0;
 }
 
 footer .social {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0;
+  margin-top: 30px;
 }
 
 
@@ -494,13 +527,15 @@ footer .contact p {
   flex-flow: wrap;
 }
 
-.contact-section .contact h4 {
+.contact-section h4 {
   text-align: center;
+  font-size: 15px;
 }
 
 
 .contact-section h3 {
   margin: 20px 20px;
+  font-size: 20px;
 }
 
 
@@ -690,8 +725,8 @@ footer .contact p {
 
   aside .content-wrapper {
     width: 50%;
-    margin: 50px 0;
     padding-left: 60px;
+    line-height: 30px;
   }
 
   aside .content-wrapper .form-description {
@@ -704,12 +739,16 @@ footer .contact p {
     display: flex;
     padding-left: 70px;
     margin-bottom: 20px;
+    margin-top: 15px;
   }
 
   .form input {
     display: flex;
-    width: 50%;
+    width: 80%;
     padding: 3px;
+    justify-content: center;
+    font-size: 1.2em;
+    height: 50px;
   }
 
   button {
@@ -748,6 +787,7 @@ footer .contact p {
   .previous-year2 {
     width: 50%;
     display: flex;
+    margin-bottom: 49px;
   }
 
   footer .content-wrapper {
@@ -774,6 +814,7 @@ footer .contact p {
     width: 50%;
     display: flex;
     flex-flow: column;
+    margin: 0;
   }
 
   .social-icons p {
@@ -917,7 +958,11 @@ footer .contact p {
 
   aside .content-wrapper {
     display: flex;
-    
+    line-height: 40px;
+  }
+
+  aside .form {
+    margin: 50px;
   }
 
   aside .content-wrapper .form-description {
@@ -957,6 +1002,15 @@ footer .contact p {
   .reviews .content-wrapper {
     display: flex;
     width: 100%;
+  }
+
+  .previous-year2 {
+    margin-bottom: 130px;
+    line-height: 30px;
+  }
+
+  .previous-year2 h4 {
+    margin-right: 65px;
   }
 
   /* ABOUT PAGE */
